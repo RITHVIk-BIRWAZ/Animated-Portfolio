@@ -43,14 +43,14 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RC
+          RP
         </a>
         <a
-          href="mailto:rajeshchittyal21@gmail.com"
+          href="mailto:rithvikbirwaz@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          rajeshchittyal21@gmail.com
+          rithvikbirwaz@gmail.com
         </a>
         <ul>
           <li>
@@ -60,12 +60,17 @@ const Navbar = () => {
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="PROJECTS" />
             </a>
           </li>
           <li>
-            <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACT" />
+            <a data-href="#certificates" href="#certificates">
+              <HoverLinks text="CERTS" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#connect" href="#connect">
+              <HoverLinks text="CONNECT" />
             </a>
           </li>
         </ul>

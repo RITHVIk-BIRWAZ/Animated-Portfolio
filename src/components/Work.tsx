@@ -1,38 +1,28 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Student Attendance Tracking",
+    category: "Full-Stack Web Application",
+    tools: "Next.js, React, Tailwind CSS, PostgreSQL, Drizzle ORM, Kinde Auth",
+    description:
+      "A full-stack attendance management system with user authentication, interactive charts, attendance reports, and downloadable admin reports.",
+    github:
+      "https://github.com/RITHVIk-BIRWAZ/fullstack-attendance-management-nextjs-react",
+    image: "/images/placeholder.webp",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
-  },
-  {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Finding Missing Person Using AI",
+    category: "AI / Computer Vision",
+    tools: "Python, OpenCV, CNN, Deep Learning, Face Recognition",
+    description:
+      "An AI-powered application to find missing persons by analyzing facial images for age and gender detection using deep learning models.",
+    github:
+      "https://github.com/RITHVIk-BIRWAZ/FINDING-MISSING-PERSON-USING-AI-AND-ALSO-SHOW-THE-AGE-AND-GENDER-DETECTION",
+    image: "/images/placeholder.webp",
   },
 ];
 
@@ -66,7 +56,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          My <span>Projects</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -108,10 +98,24 @@ const Work = () => {
                         <p className="carousel-category">
                           {project.category}
                         </p>
+                        <p className="carousel-description">
+                          {project.description}
+                        </p>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="carousel-github-link"
+                            data-cursor="disable"
+                          >
+                            View on GitHub <MdArrowOutward />
+                          </a>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">

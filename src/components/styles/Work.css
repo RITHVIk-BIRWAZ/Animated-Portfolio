@@ -107,6 +107,37 @@
   font-size: 15px;
 }
 
+.carousel-description {
+  font-weight: 200;
+  color: #adacac;
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.carousel-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 0.04em;
+}
+
+.carousel-github-link:hover {
+  border-color: var(--accentColor);
+  background: rgba(94, 234, 212, 0.1);
+  color: var(--accentColor);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.1);
+}
+
 .carousel-image-wrapper {
   flex: 1;
   display: flex;
